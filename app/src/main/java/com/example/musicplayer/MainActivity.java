@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onPermissionGranted(PermissionGrantedResponse response) {
                         // permission is granted, open the camera
                         Toast.makeText(MainActivity.this, "Permission Accepted", Toast.LENGTH_SHORT).show();
+                        getData();
                     }
 
                     @Override
@@ -48,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
                         token.continuePermissionRequest();
                     }
                 }).check();
+
+    }
+
+    private void getData() {
+        
 
     }
 }
