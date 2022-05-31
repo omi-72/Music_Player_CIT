@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
                         // check for permanent denial of permission
                         if (response.isPermanentlyDenied()) {
                             // navigate user to app settings
+
+                            Toast.makeText(MainActivity.this, "Permission Not Accepted", Toast.LENGTH_SHORT).show();
                         }
                     }
 
