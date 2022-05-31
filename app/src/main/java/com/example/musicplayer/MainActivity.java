@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.os.Bundle;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onPermissionGranted(PermissionGrantedResponse response) {
                         // permission is granted, open the camera
+                        Toast.makeText(MainActivity.this, "Permission Accepted", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
