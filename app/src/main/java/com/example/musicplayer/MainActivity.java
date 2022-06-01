@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -53,7 +54,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getData() {
-        
 
+        String[] projection = new String[]
+                {
+                        MediaStore.Audio.Media._ID,
+                        MediaStore.Audio.Media.SIZE,
+                        MediaStore.Images.Media.DATE_MODIFIED,
+                        MediaStore.Images.Media.BUCKET_DISPLAY_NAME,
+                        MediaStore.Images.Media.DISPLAY_NAME
+
+                };
     }
 }
