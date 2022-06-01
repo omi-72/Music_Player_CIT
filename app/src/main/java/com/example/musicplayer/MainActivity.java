@@ -3,6 +3,7 @@ package com.example.musicplayer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.ContentUris;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
                 long id= cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID));
                 String name = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DISPLAY_NAME));
+                Uri audioUri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id);
 
             }
         }
