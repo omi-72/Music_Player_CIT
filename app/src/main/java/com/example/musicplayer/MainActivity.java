@@ -72,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (cursor !=null){
             cursor.moveToPosition(0);
+
+            while (true){
+
+                long id= cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID));
+
+            }
         }
     }
 }
