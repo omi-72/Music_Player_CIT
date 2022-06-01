@@ -3,6 +3,7 @@ package com.example.musicplayer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.widget.Toast;
@@ -64,5 +65,6 @@ public class MainActivity extends AppCompatActivity {
                         MediaStore.Audio.Media.DISPLAY_NAME
 
                 };
+        Uri contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
     }
 }
