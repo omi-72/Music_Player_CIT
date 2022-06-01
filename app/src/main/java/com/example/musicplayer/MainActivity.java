@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
             while (true){
 
                 long id= cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID));
+                String name = cursor.getString(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DISPLAY_NAME));
 
             }
         }
