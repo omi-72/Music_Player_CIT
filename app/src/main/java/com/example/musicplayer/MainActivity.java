@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 {
                         MediaStore.Audio.Media._ID,
                         MediaStore.Audio.Media.SIZE,
-                        MediaStore.Images.Media.DATE_MODIFIED,
-                        MediaStore.Images.Media.BUCKET_DISPLAY_NAME,
-                        MediaStore.Images.Media.DISPLAY_NAME
+                        MediaStore.Audio.Media.DATE_MODIFIED,
+                        MediaStore.Audio.Media.BUCKET_DISPLAY_NAME,
+                        MediaStore.Audio.Media.DISPLAY_NAME
 
                 };
     }
