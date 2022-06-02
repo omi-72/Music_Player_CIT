@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        runTimPerm();
+        runTimePerm();
     }
 
-    private void runTimPerm() {
+    private void runTimePerm() {
         Dexter.withContext(this)
                 .withPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
                 .withListener(new PermissionListener() {
@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onPermissionDenied(PermissionDeniedResponse response) {
-                        // check for permanent denial of permission
                         if (response.isPermanentlyDenied()) {
                             // navigate user to app settings
 
