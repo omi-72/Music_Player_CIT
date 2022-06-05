@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onPermissionGranted(PermissionGrantedResponse response) {
                         // permission is granted, open the camera
-                        Toast.makeText(MainActivity.this, "Permission Accepted", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Permission granted", Toast.LENGTH_SHORT).show();
                         getData();
                     }
 
