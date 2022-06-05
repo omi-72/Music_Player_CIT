@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         if (response.isPermanentlyDenied()) {
                             // navigate user to app settings
 
-                            Toast.makeText(MainActivity.this, "Permission Not Accepted", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Permission Denied", Toast.LENGTH_SHORT).show();
                         }
                     }
 
